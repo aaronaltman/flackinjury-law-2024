@@ -23,7 +23,7 @@ export default function MainHero() {
           get our clients the compensation they deserve!
         </p>
         <div className="flex basis-1/4 gap-8 flex-wrap">
-          <button className="bg-red-600 text-white rounded-lg py-2 px-4">
+          <button className="shrink bg-red-600 text-white rounded-lg py-2 px-4">
             Free Case Evaluation
           </button>
           <button className="bg-slate-900 text-white rounded-lg py-2 px-4">
