@@ -3,8 +3,8 @@ import React from "react";
 
 export default function MainHero() {
   return (
-    <section className="flex flex-col md:flex-row justify-between max-w-6xl mx-auto ">
-      <div className="flex flex-col justify-center py-4 px-4 basis-2/3 space-y-3 md:pr-12">
+    <section className="flex flex-col md:flex-row justify-between max-w-6xl mx-auto">
+      <div className="flex flex-col justify-center py-20 px-4 basis-2/3 space-y-8 md:pr-12">
         <h1 className="font-bold tracking-wide">Flack Injury Law</h1>
         <button className="bg-slate-100 w-3/4 rounded-xl p-2">
           <span className="text-xl"> You Pay Nothing Unless We Win</span>
@@ -14,7 +14,7 @@ export default function MainHero() {
         <h2 className="text-5xl font-bold tracking-wide">
           Atlanta, Georgia Personal Injury <br /> Law Firm
         </h2>
-        <p className="">
+        <p className="leading-6">
           Flack Injury Law specializes in maximizing financial compensation for
           injured individuals in Georgia. We are experts in obtaining the
           largest settlements and verdicts as fast as possible for our clients.

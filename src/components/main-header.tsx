@@ -3,7 +3,7 @@ import React from "react";
 
 export default function MainHeader() {
   return (
-    <header className="flex flex-col md:flex-row justify-between items-center py-4 px-6 bg-slate-800 max-w-6xl mx-auto">
+    <header className="flex flex-col md:flex-row justify-between items-center py-8 px-6 bg-slate-800 max-w-6xl mx-auto">
       <Image
         src="https://wp.flackinjurylaw.com/wp-content/uploads/2023/12/flack-injury-law-logo-clearer-PNG.png"
         alt="flack injury law logo"
