@@ -1,10 +1,10 @@
-import HomeBanner from "@/components/home-banner";
-import HomeBlogPosts from "@/components/home-blog-posts";
-import HomeLogosSection from "@/components/home-logos-section";
-import HomeServicesSection from "@/components/home-services-section";
+import HomeBanner from "@/components/homepage/home-banner";
 import MainHeader from "@/components/main-header";
-import MainHero from "@/components/main-hero";
-import Image from "next/image";
+import MainHero from "@/components/homepage/main-hero";
+import HomeLogosSection from "@/components/homepage/home-logos-section";
+import HomeServicesSection from "@/components/homepage/home-services-section";
+import HomeBlogPosts from "@/components/homepage/home-blog-posts";
+import HomeCarousel from "@/components/homepage/home-carousel";
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
       <HomeLogosSection />
       <HomeServicesSection />
       <HomeBlogPosts />
+      <HomeCarousel />
     </main>
   );
 }
