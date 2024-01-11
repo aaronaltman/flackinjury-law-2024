@@ -1,3 +1,4 @@
+import HomeBanner from "@/components/home-banner";
 import HomeBlogPosts from "@/components/home-blog-posts";
 import HomeLogosSection from "@/components/home-logos-section";
 import HomeServicesSection from "@/components/home-services-section";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <main className="bg-zinc-50 max-w-6xl mx-auto">
       <MainHeader />
+      <HomeBanner />
       <MainHero />
       <HomeLogosSection />
       <HomeServicesSection />
