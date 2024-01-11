@@ -6,8 +6,8 @@ export default function MainHero() {
     <section className="flex flex-col md:flex-row justify-between max-w-6xl mx-auto ">
       <div className="flex flex-col justify-center py-4 px-4 basis-2/3 space-y-3 md:pr-12">
         <h1 className="font-bold tracking-wide">Flack Injury Law</h1>
-        <button className="text-left bg-slate-100 w-3/4 rounded-xl p-2">
-          You Pay Nothing Unless We Win
+        <button className="bg-slate-100 w-3/4 rounded-xl p-2">
+          <span className="text-xl"> You Pay Nothing Unless We Win</span>
           <br />
           <span className="font-bold">Call Now: 678-653-0309</span>
         </button>
