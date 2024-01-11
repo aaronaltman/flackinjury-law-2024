@@ -18,16 +18,76 @@ export default function HomeBlogPosts() {
         </p>
       </div>
 
-      <div className="flex flex-col px-20 space-y-10">
+      <div className="flex flex-col px-20">
         <div className="flex flex-col justify-around md:flex-row flex-wrap space-y-6 md:space-y-0">
-          <p className="border border-black/10 p-4 rounded-lg">Blog post 1</p>
-          <p className="border border-black/10 p-4 rounded-lg">Blog post 1</p>
-          <p className="border border-black/10 p-4 rounded-lg">Blog post 1</p>
+          <div className="flex flex-col md:flex-row basis-1/3 border border-black/0 p-4 rounded-lg">
+            <p className="border border-black/10 p-4 rounded-lg">
+              Blog post 3 Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Rem asperiores praesentium enim quasi accusamus quisquam,
+              pariatur beatae iure, voluptates magnam harum corrupti
+              perspiciatis hic neque delectus officiis cupiditate odit, error
+              eligendi earum in saepe quam numquam. In, vitae dignissimos. Quas
+              cumque nobis explicabo corporis facilis, debitis rem fugiat
+              eveniet reprehenderit!
+            </p>
+          </div>
+          <div className="flex basis-1/3 border border-black/0 p-4 rounded-lg">
+            <p className="border border-black/10 p-4 rounded-lg">
+              Blog post 3 Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Rem asperiores praesentium enim quasi accusamus quisquam,
+              pariatur beatae iure, voluptates magnam harum corrupti
+              perspiciatis hic neque delectus officiis cupiditate odit, error
+              eligendi earum in saepe quam numquam. In, vitae dignissimos. Quas
+              cumque nobis explicabo corporis facilis, debitis rem fugiat
+              eveniet reprehenderit!
+            </p>
+          </div>
+          <div className="flex md:basis-1/3 border border-black/0 md:p-4 rounded-lg">
+            <p className="border border-black/10 p-4 rounded-lg">
+              Blog post 3 Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Rem asperiores praesentium enim quasi accusamus quisquam,
+              pariatur beatae iure, voluptates magnam harum corrupti
+              perspiciatis hic neque delectus officiis cupiditate odit, error
+              eligendi earum in saepe quam numquam. In, vitae dignissimos. Quas
+              cumque nobis explicabo corporis facilis, debitis rem fugiat
+              eveniet reprehenderit!
+            </p>
+          </div>
         </div>
-        <div className="flex flex-col justify-around md:flex-row flex-wrap">
-          <p className="border border-black/10 p-4 rounded-lg">Blog post 1</p>
-          <p className="border border-black/10 p-4">Blog post 1</p>
-          <p className="border border-black/10 p-4">Blog post 1</p>
+        <div className="flex flex-col justify-around md:flex-row flex-wrap space-y-6 md:space-y-0">
+          <div className="flex md:basis-1/3 border border-black/0 p-4 rounded-lg">
+            <p className="border border-black/10 p-4 rounded-lg">
+              Blog post 3 Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Rem asperiores praesentium enim quasi accusamus quisquam,
+              pariatur beatae iure, voluptates magnam harum corrupti
+              perspiciatis hic neque delectus officiis cupiditate odit, error
+              eligendi earum in saepe quam numquam. In, vitae dignissimos. Quas
+              cumque nobis explicabo corporis facilis, debitis rem fugiat
+              eveniet reprehenderit!
+            </p>
+          </div>
+          <div className="flex md:basis-1/3 border border-black/0 p-4 rounded-lg">
+            <p className="border border-black/10 p-4 rounded-lg">
+              Blog post 3 Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Rem asperiores praesentium enim quasi accusamus quisquam,
+              pariatur beatae iure, voluptates magnam harum corrupti
+              perspiciatis hic neque delectus officiis cupiditate odit, error
+              eligendi earum in saepe quam numquam. In, vitae dignissimos. Quas
+              cumque nobis explicabo corporis facilis, debitis rem fugiat
+              eveniet reprehenderit!
+            </p>
+          </div>
+          <div className="flex md:basis-1/3 border border-black/0 p-4 rounded-lg">
+            <p className="border border-black/10 p-4 rounded-lg">
+              Blog post 3 Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Rem asperiores praesentium enim quasi accusamus quisquam,
+              pariatur beatae iure, voluptates magnam harum corrupti
+              perspiciatis hic neque delectus officiis cupiditate odit, error
+              eligendi earum in saepe quam numquam. In, vitae dignissimos. Quas
+              cumque nobis explicabo corporis facilis, debitis rem fugiat
+              eveniet reprehenderit!
+            </p>
+          </div>
         </div>
       </div>
     </section>
