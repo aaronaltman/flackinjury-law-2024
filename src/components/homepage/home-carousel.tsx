@@ -1,5 +1,20 @@
-import React from "react";
+"use client";
 
-export default function HomeCarousel() {
-  return <div>home-caHousC</div>;
-}
+import React from "react";
+import useEmblaCarousel from "embla-carousel-react";
+
+const HomeCarousel = () => {
+  const [emblaRef] = useEmblaCarousel();
+
+  return (
+    <div className="embla" ref={emblaRef}>
+      <div className="embla__container">
+        <div className="embla__slide">Slide 1</div>
+        <div className="embla__slide">Slide 2</div>
+        <div className="embla__slide">Slide 3</div>
+      </div>
+    </div>
+  );
+};
+
+export default HomeCarousel;
