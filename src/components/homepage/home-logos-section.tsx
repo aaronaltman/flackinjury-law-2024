@@ -6,7 +6,7 @@ export default function HomeLogosSection() {
     <section className="">
       <div className="bg-slate-900">
         <div className="">
-          <div className="flex flex-col py-10 space-y-6 md:space-y-0 md:flex-row md:justify-evenly items-center text-white text-xl">
+          <div className="flex flex-col justify-between py-16 space-y-6 md:space-y-0 md:flex-row md:justify-evenly items-center text-white text-xl">
             <Image
               src="https://wp.flackinjurylaw.com/wp-content/uploads/2024/01/state-bar-of-georgia.png"
               width={220}

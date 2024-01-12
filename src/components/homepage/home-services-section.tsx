@@ -1,15 +1,25 @@
 import React from "react";
+import HeadingStyle from "../ui/heading-style";
 
 export default function HomeServicesSection() {
   return (
     <section className="services">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-center font-bold text-5xl pt-14 pb-4">
-          Georgia Personal Injury Law
-        </h2>
-        <p className="text-center pb-12 text-red-600 text-xl">
-          Flack Injury <span className="font-bold">Law Practice Areas</span>
-        </p>
+        <div className="">
+          <HeadingStyle>
+            Atlanta, GA Personal Injury <br /> Law Services
+          </HeadingStyle>
+          <p className="text-center  text-red-600 text-xl">
+            Flack Injury <span className="font-bold">Law Practice Areas</span>
+          </p>
+          <div className="w-1/3 h-1 bg-red-600/10 mx-auto my-6 rounded-full shadow-lg"></div>
+          <p className="px-20 text-center pb-10">
+            The Flack Injury Blog contains information about personal injury law
+            in Atlanta and the State of Georgia. We specialize in Truck
+            Accidents, Slip and Falls, Medical Transport, and other cases
+            throughout the City of Atlanta and state of Georgia.
+          </p>
+        </div>
         <div className="grid md:grid-rows-2 md:grid-cols-3 gap-8 px-4">
           <div className="flex flex-col justify-evenly bg-gradient-to-r from-slate-50 via-gray-50 to-zinc-50  border border-black/10 p-4 shadow-md rounded-lg hover:scale-105 transition-all hover:shadow-xl">
             <h3 className="font-bold text-lg">

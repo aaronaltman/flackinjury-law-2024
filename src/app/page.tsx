@@ -6,6 +6,7 @@ import HomeServicesSection from "@/components/homepage/home-services-section";
 import HomeBlogPosts from "@/components/homepage/home-blog-container";
 import HomeCarousel from "@/components/homepage/home-carousel";
 import MainFooter from "@/components/main-footer";
+import HomeBlogSection from "@/components/homepage/home-blog-container";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <MainHero />
       <HomeLogosSection />
       <HomeServicesSection />
-      <HomeBlogPosts />
+      <HomeBlogSection />
       <HomeCarousel />
       <MainFooter />
     </main>

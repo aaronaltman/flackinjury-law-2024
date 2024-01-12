@@ -1,10 +1,11 @@
 import { Heading } from "lucide-react";
 import React from "react";
 import HeadingStyle from "../ui/heading-style";
+import HomeBlogList from "./home-blog-list";
 
 export default function HomeBlogSection() {
   return (
-    <section className="max-w-6xl mx-auto py-10">
+    <section className="py-10">
       <div className="">
         <HeadingStyle>
           Atlanta, GA Personal Injury <br /> Law Resources
@@ -17,6 +18,7 @@ export default function HomeBlogSection() {
           Slip and Falls, Medical Transport, and other cases throughout the City
           of Atlanta and state of Georgia.
         </p>
+        <HomeBlogList />
       </div>
     </section>
   );
