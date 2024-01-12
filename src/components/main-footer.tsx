@@ -72,9 +72,9 @@ const navigation = {
   ],
 };
 
-export default function Example() {
+export default function Footer() {
   return (
-    <footer className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-900 via-gray-800 to-zinc-900">
+    <footer className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-900 via-gray-800 to-zinc-900 rounded-t-md">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <nav
           className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
