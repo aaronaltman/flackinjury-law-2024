@@ -12,7 +12,7 @@ export default function MainHero() {
         <h2 className="text-3xl md:text-5xl font-bold tracking-widest leading-tightest">
           Atlanta, Georgia Personal Injury <br /> Law Firm
         </h2>
-        <p className="leading-6">
+        <p className="leading-6 text-lg">
           Flack Injury Law specializes in maximizing financial compensation for
           injured individuals in Georgia. We are experts in obtaining the
           largest settlements and verdicts as fast as possible for our clients.
