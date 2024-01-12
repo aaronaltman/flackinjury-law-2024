@@ -1,7 +1,5 @@
 import React from "react";
-import HomeBlogSidebar from "./home-blog-sidebar";
 import Image from "next/image";
-import { Link } from "lucide-react";
 
 type BlogPost = {
   slug: string;
