@@ -5,7 +5,7 @@ import HomeBlogList from "./home-blog-list";
 
 export default function HomeBlogSection() {
   return (
-    <section className="py-10">
+    <section className="mt-10">
       <div className="">
         <HeadingStyle>
           Atlanta, GA Personal Injury <br /> Law Resources

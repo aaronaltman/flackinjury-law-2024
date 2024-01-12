@@ -7,23 +7,28 @@ function classNames(...classes: any) {
 
 export default function HomeTestimonialsSection() {
   return (
-    <div className="relative isolate bg-zinc-50 pb-32 pt-24 sm:pt-32">
+    <div className="relative isolate bg-zinc-50 pb-20  pt-12">
       <div
         className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
         aria-hidden="true"
       ></div>
       <div
-        className="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end"
+        className="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden opacity-25 blur-3xl sm:pt-20 xl:justify-end"
         aria-hidden="true"
       ></div>
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">
-            Testimonials
-          </h2>
-          <HeadingStyle>We have worked with many amazing people</HeadingStyle>
-        </div>
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+      <div className="mx-auto max-w-7xl px-6 lg:px-4">
+        <HeadingStyle>
+          Flack Personal Injury Law, <br /> Atlanta Client Testimonials
+        </HeadingStyle>
+        <p className="text-center  text-red-600 text-xl font-bold">Resources</p>
+        <div className="w-1/3 h-1 bg-red-600/10 mx-auto my-6 rounded-full shadow-lg"></div>
+        <p className="px-20 text-center pb-10">
+          The Flack Injury Blog contains information about personal injury law
+          in Atlanta and the State of Georgia. We specialize in Truck Accidents,
+          Slip and Falls, Medical Transport, and other cases throughout the City
+          of Atlanta and state of Georgia.
+        </p>
+        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
           <figure className="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
             <blockquote className="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
               <p>{`“${featuredTestimonial.body}”`}</p>

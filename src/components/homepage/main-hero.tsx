@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
+import { motion } from "framer-motion";
 
 export default function MainHero() {
   return (
@@ -20,15 +23,21 @@ export default function MainHero() {
           attorney on the phone. And we are hardworking: we work tirelessly to
           get our clients the compensation they deserve!
         </p>
-        <div className="flex flex-col flex-wrap md:flex-row gap-4 pb-10">
+        <motion.div
+          className="flex flex-col flex-wrap md:flex-row gap-4 pb-10"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+        >
           <Button className="shrink bg-red-600 text-white rounded-lg py-2 px-4">
             Free Case Evaluation
           </Button>
           <Button className="bg-slate-900 text-white rounded-lg py-2 px-4">
             Personal Attention, Maximum Compensation →
           </Button>
-        </div>
+        </motion.div>
       </div>
+
       <div className="flex basis-1/4 md:basis-1/2 h-stretch">
         <Image
           alt="flack injury hero"
