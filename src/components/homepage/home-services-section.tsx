@@ -4,7 +4,7 @@ import HeadingStyle from "../ui/heading-style";
 export default function HomeServicesSection() {
   return (
     <section className="services">
-      <div className="max-w-6xl mx-auto">
+      <div className="">
         <div className="">
           <HeadingStyle>
             Atlanta, GA Personal Injury <br /> Law Services

@@ -14,7 +14,9 @@ export default function HomeBlogList() {
             </li>
           ))}
         </ul>
-        <HomeBlogSidebar />
+        <div className="hidden md:block">
+          <HomeBlogSidebar />
+        </div>
       </div>
     </section>
   );
