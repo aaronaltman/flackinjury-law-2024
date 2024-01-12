@@ -1,4 +1,4 @@
-export const servicesItems = [
+export const services = [
   {
     title:
       "Tractor Trailer Wrecks, Trucking Accidents, and Commercial Vehicle Collisions",
