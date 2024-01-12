@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 export default function MainHero() {
   return (
-    <section className="flex flex-col md:flex-row justify-around pt-6  md:py-10 md:-mt-0 max-w-6xl mx-auto">
+    <section className="flex flex-col md:flex-row justify-around pt-6 md:pt-0   md:-mt-0 max-w-6xl mx-auto">
       <div className="flex flex-col justify-center px-4 basis-2/3 space-y-6 md:pr-12 ">
         <h1 className="font-bold tracking-widest text-lg">Flack Injury Law</h1>
         <div className="hidden md:block border border-black/10 border-x-0 border-y-0 border-b-2 md:w-1/4 shadow-lg bg-red-600"></div>
@@ -20,7 +20,7 @@ export default function MainHero() {
           attorney on the phone. And we are hardworking: we work tirelessly to
           get our clients the compensation they deserve!
         </p>
-        <div className="flex flex-col flex-wrap md:flex-row space-x-4 space-y-6 pb-10">
+        <div className="flex flex-col flex-wrap md:flex-row gap-4 pb-10">
           <Button className="shrink bg-red-600 text-white rounded-lg py-2 px-4">
             Free Case Evaluation
           </Button>
