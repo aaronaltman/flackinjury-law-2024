@@ -29,22 +29,11 @@ export default function HomeTestimonialsSection() {
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
             <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-              <img
-                className="h-10 w-10 flex-none rounded-full bg-gray-50"
-                src={featuredTestimonial.author.imageUrl}
-                alt=""
-              />
               <div className="flex-auto">
                 <div className="font-semibold">
                   {featuredTestimonial.author.name}
                 </div>
-                <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
               </div>
-              <img
-                className="h-10 w-auto flex-none"
-                src={featuredTestimonial.author.logoUrl}
-                alt=""
-              />
             </figcaption>
           </figure>
           {testimonials.map((columnGroup, columnGroupIdx) => (
@@ -66,23 +55,17 @@ export default function HomeTestimonialsSection() {
                 >
                   {column.map((testimonial) => (
                     <figure
-                      key={testimonial.author.handle}
+                      key={testimonial.author.name}
                       className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
                     >
                       <blockquote className="text-gray-900">
                         <p>{`“${testimonial.body}”`}</p>
                       </blockquote>
                       <figcaption className="mt-6 flex items-center gap-x-4">
-                        <img
-                          className="h-10 w-10 rounded-full bg-gray-50"
-                          src={testimonial.author.imageUrl}
-                          alt=""
-                        />
                         <div>
                           <div className="font-semibold">
                             {testimonial.author.name}
                           </div>
-                          <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
                         </div>
                       </figcaption>
                     </figure>
