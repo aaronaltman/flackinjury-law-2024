@@ -16,10 +16,18 @@ export default function MainHeader() {
       </Link>
       <nav>
         <ul className="flex flex-wrap justify-center items-center font-bold text-lg md:text-xl py-4 md:py-0 text-white gap-4">
-          <li className="hidden md:block">Home</li>
-          <li>About</li>
-          <li>Practice Areas</li>
-          <li>Contact</li>
+          <li className="hidden md:block">
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/pages/about-flack-injury-law">About</Link>
+          </li>
+          <li>
+            <Link href="/pages/disclaimer">Disclaimer</Link>
+          </li>
+          <li>
+            <Link href="/pages/privacy-policy-2">Privacy Policy</Link>
+          </li>
         </ul>
       </nav>
     </header>
