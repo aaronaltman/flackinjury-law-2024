@@ -10,13 +10,15 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const singlePageData = await fetch("https://wp.flackinjurylaw.com/graphql", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      query: `
+  const singlePostSeoData = await fetch(
+    "https://wp.flackinjurylaw.com/graphql",
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        query: `
             query PageByUri {
-  pageBy(uri: "${params.slug}") {
+  postBy(slug: "${params.slug}") {
     seo {
       canonical
       cornerstone
@@ -43,13 +45,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
             `,
-    }),
-  })
+      }),
+    }
+  )
     .then((res) => res.json())
     .then((res) => res.data.pageBy);
   return {
-    title: singlePageData?.seo?.title,
-    description: singlePageData?.seo?.metaDesc,
+    title: singlePostSeoData?.seo?.title,
+    description: singlePostSeoData?.seo?.metaDesc,
   };
 }
 
