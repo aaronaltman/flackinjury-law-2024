@@ -39,7 +39,7 @@ export default function HomeServicesSection() {
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                viewport={{ root: scrollRef }}
+                viewport={{ root: scrollRef, once: true }}
                 transition={{ delay: 0.2 }}
               >
                 <div className="flex flex-col justify-evenly bg-gradient-to-br from-stone-50 via-neutral-50 to-zinc-50 border border-black/10 p-4 my-3 shadow-md rounded-lg hover:scale-105 transition-all hover:shadow-xl">
