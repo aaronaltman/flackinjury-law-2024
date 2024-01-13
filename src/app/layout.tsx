@@ -5,7 +5,7 @@ import "@/styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Flack Injury Law",
+  title: "Flack Injury Law | Atlanta, GA Personal Injury Attorney",
   description:
     "Flack Injury Law specializes in personal injury cases in Georgia. Get fast settlements and speak directly to your attorney. Expertise in auto accidents, slip and falls, and more.",
 };
