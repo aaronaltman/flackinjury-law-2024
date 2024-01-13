@@ -43,11 +43,11 @@ export default async function SinglePostPage({ params }: { params: any }) {
           layout="responsive"
           alt={singlePostData.title}
           className="object-cover max-h-[300px] rounded-b-xl shadow-xl"
+          priority={true}
         />
-        <div
-          className="prose prose-lg mx-auto py-10 px-4"
-          dangerouslySetInnerHTML={{ __html: singlePostData.content }}
-        />
+        <div className="prose prose-lg mx-auto py-10 px-4 prose-slate">
+          <div dangerouslySetInnerHTML={{ __html: singlePostData.content }} />
+        </div>
         <Footer />
       </div>
     </div>

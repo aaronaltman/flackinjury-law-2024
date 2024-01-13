@@ -22,13 +22,13 @@ export default function HomeTestimonialsSection() {
         </HeadingStyle>
         <p className="text-center  text-red-600 text-xl font-bold">Resources</p>
         <div className="w-1/3 h-1 bg-red-600/10 mx-auto my-6 rounded-full shadow-lg"></div>
-        <p className="px-20 text-center pb-10">
+        <p className="px-20 text-center">
           The Flack Injury Blog contains information about personal injury law
           in Atlanta and the State of Georgia. We specialize in Truck Accidents,
           Slip and Falls, Medical Transport, and other cases throughout the City
           of Atlanta and state of Georgia.
         </p>
-        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
           <figure className="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
             <blockquote className="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
               <p>{`“${featuredTestimonial.body}”`}</p>

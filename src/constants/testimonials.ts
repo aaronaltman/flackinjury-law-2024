@@ -17,12 +17,9 @@ export const testimonials = [
     ],
     [
       {
-        body: "Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.",
+        body: "All of the large firms I previously contacted had declined my case… Jonathan provided invaluable assistance while remaining super patient, friendly and responsive. Finally, this case is behind me and I can breath again. Highly, highly recommend!",
         author: {
-          name: "Lindsay Walton",
-          handle: "lindsaywalton",
-          imageUrl:
-            "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Will N.",
         },
       },
       // More testimonials...
@@ -31,24 +28,18 @@ export const testimonials = [
   [
     [
       {
-        body: "Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.",
+        body: "Jonathan handled my case with ease. Highly recommended if you ever are in the need of legal representation!",
         author: {
-          name: "Tom Cook",
-          handle: "tomcook",
-          imageUrl:
-            "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Cean B.",
         },
       },
       // More testimonials...
     ],
     [
       {
-        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.",
+        body: "Fully satisfied with the results after I obtained Flack Injury law!! My first attorney took me through months of no progress with my case!! thankfully, it was restored with the help of attorney Jonathan Flack, for his quick and speedy response. Everything done right from beginning to end!!!",
         author: {
-          name: "Leonard Krasner",
-          handle: "leonardkrasner",
-          imageUrl:
-            "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Jomandi F.",
         },
       },
       // More testimonials...
