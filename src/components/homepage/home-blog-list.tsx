@@ -62,10 +62,15 @@ export default async function HomeBlogList() {
                   className="object-cover object-center w-full h-full"
                 />
               </div>
-              <h2 className="mt-2 text-left text-lg font-semibold">
+              <h2 className="mt-2 text-left text-lg font-semibold prose line-clamp-2">
                 {post.title}
               </h2>
-              <p className="line-clamp-3">{post.content}</p>
+              {/* add the dangerously set html here*/}
+              {}
+              <p
+                className="mt-2 text-left text-gray-600 line-clamp-4 prose"
+                dangerouslySetInnerHTML={{ __html: post.content }}
+              />
             </a>
           </li>
         ))}
