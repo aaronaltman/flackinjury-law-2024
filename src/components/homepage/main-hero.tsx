@@ -12,10 +12,10 @@ export default function MainHero() {
         <h1 className="font-bold tracking-widest text-lg">Flack Injury Law</h1>
         <div className="hidden md:block border border-black/10 border-x-0 border-y-0 border-b-2 md:w-1/4 shadow-lg bg-red-600"></div>
 
-        <h2 className="text-3xl md:text-5xl font-bold tracking-widest leading-tightest">
+        <h2 className="text-3xl md:text-5xl font-bold tracking-wide">
           Atlanta, Georgia Personal Injury <br /> Law Firm
         </h2>
-        <p className="leading-6 text-lg">
+        <p className="text-lg">
           Flack Injury Law specializes in maximizing financial compensation for
           injured individuals in Georgia. We are experts in obtaining the
           largest settlements and verdicts as fast as possible for our clients.

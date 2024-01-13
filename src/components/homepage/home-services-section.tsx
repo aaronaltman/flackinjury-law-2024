@@ -29,9 +29,9 @@ export default function HomeServicesSection() {
         <div className="px-4">
           {services.map((service: Service) => (
             <section className="md:max-w-3xl md:mx-auto">
-              <div className="flex flex-col justify-evenly bg-gradient-to-br from-stone-50 via-neutral-50 to-zinc-50 border border-black/10 p-4 space-y-3 shadow-md rounded-lg hover:scale-105 transition-all hover:shadow-xl">
-                <div>
-                  <h3 className="font-bold text-xl">{service.title}</h3>
+              <div className="flex flex-col justify-evenly bg-gradient-to-br from-stone-50 via-neutral-50 to-zinc-50 border border-black/10 p-4 my-3 shadow-md rounded-lg hover:scale-105 transition-all hover:shadow-xl">
+                <div className="space-y-2">
+                  <h3 className="font-bold text-lg">{service.title}</h3>
                   <p>{service.description}</p>
                 </div>
               </div>
