@@ -11,7 +11,7 @@ export default function MainHeader() {
           alt="flack injury law logo"
           width={220}
           height={79}
-          className="pb-6 md:pb-0"
+          className="pb-6 md:pb-0 rounded-sm"
         />
       </Link>
       <nav>
