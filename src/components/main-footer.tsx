@@ -85,6 +85,9 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Flack Injury Law. All rights
           reserved.
         </p>
+        <p className="mt-1 text-center text-xs leading-5 text-gray-500">
+          1201 West Peachtree Street NW, Suite 2300, Atlanta, Georgia 30309
+        </p>
       </div>
     </footer>
   );
