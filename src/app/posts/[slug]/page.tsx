@@ -2,6 +2,56 @@ import Footer from "@/components/main-footer";
 import MainHeader from "@/components/main-header";
 import Image from "next/image";
 import React from "react";
+import { Metadata } from "next";
+
+type Props = {
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const singlePageData = await fetch("https://wp.flackinjurylaw.com/graphql", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      query: `
+            query PageByUri {
+  pageBy(uri: "${params.slug}") {
+    seo {
+      canonical
+      cornerstone
+      focuskw
+      fullHead
+      metaDesc
+      metaKeywords
+      metaRobotsNofollow
+      metaRobotsNoindex
+      opengraphAuthor
+      opengraphDescription
+      opengraphModifiedTime
+      opengraphPublishedTime
+      opengraphPublisher
+      opengraphSiteName
+      opengraphTitle
+      opengraphType
+      opengraphUrl
+      readingTime
+      title
+      twitterDescription
+      twitterTitle
+    }
+  }
+}
+            `,
+    }),
+  })
+    .then((res) => res.json())
+    .then((res) => res.data.pageBy);
+  return {
+    title: singlePageData?.seo?.title,
+    description: singlePageData?.seo?.metaDesc,
+  };
+}
 
 export default async function SinglePostPage({ params }: { params: any }) {
   const singlePostData = await fetch("https://wp.flackinjurylaw.com/graphql", {

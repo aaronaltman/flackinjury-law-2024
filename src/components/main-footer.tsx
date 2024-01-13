@@ -5,7 +5,7 @@ const navigation = {
     { name: "Resources", href: "/blog" },
     { name: "Disclaimer", href: "/pages/disclaimer" },
     { name: "Privacy Policy", href: "/pages/privacy-policy-2" },
-    { name: "Partners", href: "#" },
+    { name: "Terms and Conditions", href: "/pages/terms-and-conditions" },
   ],
   social: [
     {
