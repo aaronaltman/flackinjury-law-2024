@@ -1,6 +1,9 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import HeadingStyle from "../ui/heading-style";
 import { services } from "@/constants/services-section";
+import { motion } from "framer-motion";
 
 type Service = {
   title: string;
@@ -8,6 +11,7 @@ type Service = {
 };
 
 export default function HomeServicesSection() {
+  const scrollRef = useRef(null);
   return (
     <section className="services">
       <div className="">
@@ -28,13 +32,23 @@ export default function HomeServicesSection() {
         </div>
         <div className="px-4">
           {services.map((service: Service) => (
-            <section className="md:max-w-3xl md:mx-auto">
-              <div className="flex flex-col justify-evenly bg-gradient-to-br from-stone-50 via-neutral-50 to-zinc-50 border border-black/10 p-4 my-3 shadow-md rounded-lg hover:scale-105 transition-all hover:shadow-xl">
-                <div className="space-y-2">
-                  <h3 className="font-bold text-lg">{service.title}</h3>
-                  <p>{service.description}</p>
+            <section
+              key={service.description}
+              className="md:max-w-3xl md:mx-auto"
+            >
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ root: scrollRef }}
+                transition={{ delay: 0.2 }}
+              >
+                <div className="flex flex-col justify-evenly bg-gradient-to-br from-stone-50 via-neutral-50 to-zinc-50 border border-black/10 p-4 my-3 shadow-md rounded-lg hover:scale-105 transition-all hover:shadow-xl">
+                  <div className="space-y-2">
+                    <h3 className="font-bold text-lg">{service.title}</h3>
+                    <p>{service.description}</p>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </section>
           ))}
         </div>
