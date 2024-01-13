@@ -14,7 +14,7 @@ export default function HomeLogosSection() {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ root: scrollRef }}
+              viewport={{ root: scrollRef, once: true }}
               transition={{ delay: 0.3 }}
             >
               <Image
@@ -28,7 +28,7 @@ export default function HomeLogosSection() {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ root: scrollRef }}
+              viewport={{ root: scrollRef, once: true }}
               transition={{ delay: 0.3 }}
             >
               <Image
@@ -42,7 +42,7 @@ export default function HomeLogosSection() {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ root: scrollRef }}
+              viewport={{ root: scrollRef, once: true }}
               transition={{ delay: 0.3 }}
             >
               <Image

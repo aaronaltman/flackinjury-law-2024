@@ -23,10 +23,10 @@ export default function MainHeader() {
             <Link href="/pages/about-flack-injury-law">About</Link>
           </li>
           <li>
-            <Link href="/pages/disclaimer">Disclaimer</Link>
+            <Link href="/blog">Resources</Link>
           </li>
           <li>
-            <Link href="/pages/privacy-policy-2">Privacy Policy</Link>
+            <Link href="/pages/privacy-policy-2">Download Free Guide</Link>
           </li>
         </ul>
       </nav>
