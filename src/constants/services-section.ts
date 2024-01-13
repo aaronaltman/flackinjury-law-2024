@@ -11,15 +11,23 @@ export const services = [
       "If you’ve been injured in a non-emergency medical transport van, Flack Injury Law is here to help. Whether the injury arose from improper securing of a wheelchair, improper belting, or reckless driving, we know how to maximize your compensation.",
   },
   {
-    title: "UI/UX Design",
+    title: "Inadequate Security, Premises Liability, and Crime Victims",
     description:
-      "I can design a beautiful and modern user interface for your web and mobile application.",
-    icon: "design",
+      "If you’ve been a victim of a crime at a business establishment, you may be entitled to recover compensation from the property owner through a claim of inadequate or negligent security. Give us a call to discuss your case.",
   },
   {
-    title: "Consultation",
+    title: "Automobile Collisions and Car Accidents",
     description:
-      "I can help you to make a technical decision for your project.",
-    icon: "consultation",
+      "From fender-benders to major collisions, our auto accident services are designed to get you the maximum compensation possible.",
+  },
+  {
+    title: "Slip and Falls / Trip and Falls",
+    description:
+      "Slip and fall injuries can occur anywhere. We are experts in this area of law, and will help you get the financial support you need for recovery.",
+  },
+  {
+    title: "Wrongful Death and Catastrophic Injury",
+    description:
+      "This area of law requires a special attorney who is not only an outstanding advocate but also a compassionate partner in the healing and recovery process for you and your family.",
   },
 ];
