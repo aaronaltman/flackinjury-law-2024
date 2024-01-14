@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { SheetDemo } from "./sheet";
 
 export default function MainHeader() {
   return (
@@ -26,7 +27,7 @@ export default function MainHeader() {
             <Link href="/blog">Resources</Link>
           </li>
           <li>
-            <Link href="/pages/privacy-policy-2">Download Free Guide</Link>
+            <SheetDemo />
           </li>
         </ul>
       </nav>
