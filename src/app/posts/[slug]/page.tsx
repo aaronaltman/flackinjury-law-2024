@@ -98,8 +98,8 @@ export default async function SinglePostPage({ params }: { params: any }) {
           className="object-cover max-h-[300px] rounded-b-xl shadow-xl"
           priority={true}
         />
-        <div className="prose prose-lg mx-auto py-10 px-4 prose-slate">
-          <div dangerouslySetInnerHTML={{ __html: singlePostData.content }} />
+        <div className="max-w-3xl mx-auto my-10 prose">
+          {singlePostData.content}
         </div>
         <Footer />
       </div>

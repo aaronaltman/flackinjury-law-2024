@@ -99,12 +99,10 @@ export default async function SinglePagePage({ params }: { params: any }) {
     <div>
       <MainHeader />
       <HomeBanner />
-      <h1 className="prose text-4xl mt-10 text-center prose-slate font-bold ">
-        {singlePageData?.title}
-      </h1>
+      <h1 className="prose ">{singlePageData?.title}</h1>
       <div
-        className="prose prose-lg mx-auto py-10 px-4 prose-slate"
-        dangerouslySetInnerHTML={{ __html: singlePageData.content }}
+        className="prose "
+        dangerouslySetInnerHTML={{ __html: singlePageData?.content }}
       />
       <Footer />
     </div>
