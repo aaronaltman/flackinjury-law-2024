@@ -91,11 +91,10 @@ export default async function SinglePostPage({ params }: { params: any }) {
       <div className="flex flex-col bg-zinc-50 border border-black/10 shadow-md">
         <Image
           src={`${singlePostData.featuredImage.node.sourceUrl}`}
-          width={150}
+          width={900}
           height={200}
-          layout="responsive"
           alt={singlePostData.title}
-          className="object-cover max-h-[300px] rounded-b-xl shadow-xl"
+          className=" mx-auto mt-5 rounded-b-xl shadow-xl"
           priority={true}
         />
         <div className="max-w-3xl mx-auto my-10 prose">

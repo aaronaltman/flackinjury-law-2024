@@ -99,9 +99,9 @@ export default async function SinglePagePage({ params }: { params: any }) {
     <div>
       <MainHeader />
       <HomeBanner />
-      <h1 className="prose ">{singlePageData?.title}</h1>
+      <h1 className="prose">{singlePageData?.title}</h1>
       <div
-        className="prose "
+        className="prose"
         dangerouslySetInnerHTML={{ __html: singlePageData?.content }}
       />
       <Footer />
