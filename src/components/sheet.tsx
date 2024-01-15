@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -18,10 +19,10 @@ export function SheetDemo() {
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="outline" className="text-slate-900">
-          Open
+          Contact Us
         </Button>
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="bg-zinc-50">
         <SheetHeader>
           <SheetTitle>Contact Us Today!</SheetTitle>
           <SheetDescription>
@@ -29,19 +30,19 @@ export function SheetDemo() {
           </SheetDescription>
         </SheetHeader>
         <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
+          <div className="">
             <Label htmlFor="name" className="text-right">
               Name
             </Label>
-            <Input id="name" value="Your Name" className="col-span-3" />
+            <Input id="name" value="Name" className="col-span-3" />
           </div>
-          <div className="grid grid-cols-4 items-center gap-4">
+          <div className="">
             <Label htmlFor="email" className="text-right">
               Email
             </Label>
-            <Input id="email" value="Your Email" className="col-span-3" />
+            <Input id="email" value="Email" className="col-span-3" />
           </div>
-          <div className="grid grid-cols-4 items-center gap-4">
+          <div className="">
             <Label htmlFor="email" className="text-right">
               Message
             </Label>
@@ -51,7 +52,7 @@ export function SheetDemo() {
         <SheetFooter>
           <SheetClose asChild>
             <Button type="submit" className="bg-slate-900">
-              Save changes
+              Get a Free Case Evaluation
             </Button>
           </SheetClose>
         </SheetFooter>
