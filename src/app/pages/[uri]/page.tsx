@@ -95,15 +95,20 @@ export default async function SinglePagePage({ params }: { params: any }) {
   })
     .then((res) => res.json())
     .then((res) => res.data.pageBy);
+
   return (
     <div>
       <MainHeader />
       <HomeBanner />
-      <h1 className="prose">{singlePageData?.title}</h1>
-      <div
-        className="prose"
-        dangerouslySetInnerHTML={{ __html: singlePageData?.content }}
-      />
+      <div id="theContent" className="py-10 space-y-6">
+        <h1 className="prose text-center mx-auto prose-xl font-bold">
+          {singlePageData?.title}
+        </h1>
+        <div
+          className="prose mx-auto prose-lg"
+          dangerouslySetInnerHTML={{ __html: singlePageData?.content }}
+        />
+      </div>
       <Footer />
     </div>
   );
