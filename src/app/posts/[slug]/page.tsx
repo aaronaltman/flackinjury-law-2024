@@ -91,15 +91,16 @@ export default async function SinglePostPage({ params }: { params: any }) {
       <div className="flex flex-col bg-zinc-50 border border-black/10 shadow-md">
         <Image
           src={`${singlePostData.featuredImage.node.sourceUrl}`}
-          width={900}
+          width={400}
           height={200}
           alt={singlePostData.title}
-          className=" mx-auto mt-5 rounded-b-xl shadow-xl"
+          className=" mx-auto rounded-b-xl shadow-xl object-cover w-full h-64"
           priority={true}
         />
-        <div className="max-w-3xl mx-auto my-10 prose">
-          {singlePostData.content}
-        </div>
+        <div
+          className="prose lg:prose-xl py-4 px-4 mx-auto my-5"
+          dangerouslySetInnerHTML={{ __html: singlePostData.content }}
+        />
         <Footer />
       </div>
     </div>

@@ -61,3 +61,34 @@ export default async function SinglePagePage({ params }: { params: any }) {
     .then((res) => res.json())
     .then((res) => res.data.pageBy);
 }
+
+export async function theBlogPageData() {
+  const data = await fetch("https://wp.flackinjurylaw.com/graphql", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      query: `
+        {
+  posts(first: 9) {
+    edges {
+      node {
+        id
+        blocks(postTemplate: false)
+        featuredImage {
+          node {
+            sourceUrl
+          }
+        }
+      }
+    }
+  }
+}
+          `,
+    }),
+  });
+  return {
+    props: {
+      data: await data.json(),
+    },
+  };
+}
