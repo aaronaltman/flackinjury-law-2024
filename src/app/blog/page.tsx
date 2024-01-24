@@ -27,7 +27,7 @@ export default async function BlogPage() {
       <MainHeader />
       <h1 className="text-center py-4 text-xl font-bold">{page.title}</h1>
       <p key={page.id}>
-        {page.blocks.map((block) => {
+        {page.blocks.map((block: any) => {
           <p>{block.innerblocks}</p>;
         })}
       </p>
