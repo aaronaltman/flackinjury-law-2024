@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function MainHero() {
   return (
@@ -29,11 +30,26 @@ export default function MainHero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          <Button className="shrink bg-red-600 text-white rounded-lg py-2 px-4">
-            Free Case Evaluation
+          <Button
+            asChild
+            className="shrink bg-red-600 text-white rounded-lg py-2 px-4"
+          >
+            <a
+              href="mailto:flack@flackinjurylaw.com"
+              className="text-red-600"
+              target="_blank"
+            >
+              Free Case Evaluation
+            </a>
           </Button>
-          <Button className="bg-slate-900 text-white rounded-lg py-2 px-4">
-            Personal Attention, Maximum Compensation →
+
+          <Button
+            asChild
+            className="bg-slate-900 text-white rounded-lg py-2 px-4"
+          >
+            <Link href="/pages/about-flack-injury-law">
+              Personal Attention, Maximum Compensation →
+            </Link>
           </Button>
         </motion.div>
       </div>
