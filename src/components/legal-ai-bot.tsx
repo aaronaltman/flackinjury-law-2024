@@ -64,10 +64,7 @@ export default function LegalAIBot() {
         type="submit"
         variant="outline"
         color="secondary"
-        style={{
-          backgroundColor: loading ? "#FFFFFF" : "#003f5c",
-          animation: loading ? "flashing 1s infinite alternate" : "none",
-        }}
+        onClick={handleSubmit}
         disabled={loading}
       >
         {loading ? "Loading..." : "Send Question"}
