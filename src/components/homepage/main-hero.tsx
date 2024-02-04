@@ -21,7 +21,7 @@ export default function MainHero() {
           largest settlements and verdicts as fast as possible for our clients.
           We are responsive — our clients can actually call and speak to their
           attorney on the phone. And we are hardworking: we work tirelessly to
-          get our clients the compensation they deserve!
+          get our clients the compensation they deserve.
         </p>
         <motion.div
           className="flex flex-col flex-wrap md:flex-row gap-4 pb-10"

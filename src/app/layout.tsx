@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
+import GoogleReview from "@/components/google-review";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
         className={`${inter.className} bg-gradient-to-r from-stone-100 via-slate-200 to-zinc-50`}
       >
         {children}
+        <GoogleReview />
       </body>
     </html>
   );

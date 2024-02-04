@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { SheetDemo } from "./sheet";
+import { Button } from "./ui/button";
 
 export default function MainHeader() {
   return (
@@ -27,7 +28,7 @@ export default function MainHeader() {
             <Link href="/blog">Resources</Link>
           </li>
           <li>
-            <SheetDemo />
+            <Button variant={"ghost"}>Free Case Evaluation</Button>
           </li>
         </ul>
       </nav>
