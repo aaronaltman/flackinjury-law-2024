@@ -1,3 +1,5 @@
+import Footer from "@/components/main-footer";
+import MainHeader from "@/components/main-header";
 import React from "react";
 
 export default function BlogPagaLayout({
@@ -5,5 +7,11 @@ export default function BlogPagaLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div>{children}</div>;
+  return (
+    <div>
+      <MainHeader />
+      {children}
+      <Footer />
+    </div>
+  );
 }

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { SheetDemo } from "./sheet";
 import { Button } from "./ui/button";
 
 export default function MainHeader() {
@@ -11,8 +10,8 @@ export default function MainHeader() {
         <Image
           src="https://wp.flackinjurylaw.com/wp-content/uploads/2023/12/flack-injury-law-logo-clearer-PNG.png"
           alt="flack injury law logo"
-          width={220}
-          height={79}
+          width={250}
+          height={85}
           className="pb-6 md:pb-0 rounded-sm"
         />
       </Link>

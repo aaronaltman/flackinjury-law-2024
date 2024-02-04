@@ -1,4 +1,3 @@
-import { Heading } from "lucide-react";
 import React from "react";
 import HeadingStyle from "../ui/heading-style";
 import HomeBlogList from "./home-blog-list";
