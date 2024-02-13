@@ -8,21 +8,13 @@ function classNames(...classes: any) {
 export default function HomeTestimonialsSection() {
   return (
     <div className="relative isolate bg-zinc-50 pb-20  pt-12">
-      <div
-        className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
-        aria-hidden="true"
-      ></div>
-      <div
-        className="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden opacity-25 blur-3xl sm:pt-20 xl:justify-end"
-        aria-hidden="true"
-      ></div>
       <div className="mx-auto max-w-7xl px-6 lg:px-4">
         <HeadingStyle>
           Flack Personal Injury Law, <br /> Atlanta Client Testimonials
         </HeadingStyle>
         <p className="text-center  text-red-600 text-xl font-bold">Resources</p>
         <div className="w-1/3 h-1 bg-red-600/10 mx-auto my-6 rounded-full shadow-lg"></div>
-        <p className="px-20 text-center">
+        <p className="lg:px-20">
           The Flack Injury Blog contains information about personal injury law
           in Atlanta and the State of Georgia. We specialize in Truck Accidents,
           Slip and Falls, Medical Transport, and other cases throughout the City

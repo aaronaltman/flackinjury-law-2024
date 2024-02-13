@@ -69,6 +69,8 @@ export default async function SinglePostPage({ params }: { params: any }) {
               featuredImage {
                 node {
                   sourceUrl
+                  link
+                  slug
                 }
               }
               title
