@@ -21,8 +21,8 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-gradient-to-r from-stone-100 via-slate-200 to-zinc-50`}
       >
-        {children}
         <GoogleReview />
+        {children}
       </body>
     </html>
   );
