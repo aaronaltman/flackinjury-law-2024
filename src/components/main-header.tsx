@@ -27,7 +27,14 @@ export default function MainHeader() {
             <Link href="/blog">Resources</Link>
           </li>
           <li>
-            <Button variant={"ghost"}>Free Case Evaluation</Button>
+            <a href="mailto:flack@flackinjurylaw.com">
+              <Button
+                variant={"outline"}
+                className="text-slate-900 hover:bg-slate-200"
+              >
+                Free Case Evaluation
+              </Button>
+            </a>
           </li>
         </ul>
       </nav>
