@@ -1,7 +1,10 @@
 const navigation = {
   main: [
     { name: "Home", href: "/" },
-    { name: "About", href: "/" },
+    {
+      name: "About",
+      href: "/pages/about-flack-injury-law",
+    },
     { name: "Resources", href: "/blog" },
     { name: "Disclaimer", href: "/pages/disclaimer" },
     { name: "Privacy Policy", href: "/pages/privacy-policy-2" },
