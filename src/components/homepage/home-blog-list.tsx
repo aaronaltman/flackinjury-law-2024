@@ -57,7 +57,6 @@ export default async function HomeBlogList() {
                   src={`${post.featuredImage.node.sourceUrl}`}
                   width={300}
                   height={200}
-                  layout="responsive"
                   alt={`featured image for ${post.title}`}
                   className="object-cover object-center w-full h-full"
                 />
@@ -65,8 +64,6 @@ export default async function HomeBlogList() {
               <h2 className="mt-2 text-left text-lg font-semibold prose line-clamp-2">
                 {post.title}
               </h2>
-              {/* add the dangerously set html here*/}
-              {}
               <p
                 className="mt-2 text-left text-gray-600 line-clamp-4 prose"
                 dangerouslySetInnerHTML={{ __html: post.content }}
