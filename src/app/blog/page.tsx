@@ -24,7 +24,7 @@ export default async function BlogPage() {
     body: JSON.stringify({
       query: `
       query PostFirstSix {
-        posts(first: 8) {
+        posts(first: 6) {
           edges {
             node {
               id
@@ -47,8 +47,8 @@ export default async function BlogPage() {
     .then((res) => res.data.posts.edges.map((edge: Edge) => edge.node));
 
   return (
-    <section className="flex items-center justify-center p-4">
-      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <section className="flex items-center justify-center p-4 max-w-6xl mx-auto">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10 mt-10">
         {blogPosts.map((post: BlogPost) => (
           <li key={post.slug} className="cursor-pointer">
             <a href={`/posts/${post.slug}`} className="block">
@@ -65,8 +65,6 @@ export default async function BlogPage() {
               <h2 className="mt-2 text-left text-lg font-semibold prose line-clamp-2">
                 {post.title}
               </h2>
-              {/* add the dangerously set html here*/}
-              {}
               <p
                 className="mt-2 text-left text-gray-600 line-clamp-4 prose"
                 dangerouslySetInnerHTML={{ __html: post.content }}

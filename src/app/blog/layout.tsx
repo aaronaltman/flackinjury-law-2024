@@ -8,7 +8,7 @@ export default function BlogPagaLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
+    <div className="max-w-6xl mx-auto">
       <MainHeader />
       {children}
       <Footer />
